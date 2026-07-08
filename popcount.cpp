@@ -14,7 +14,25 @@ public:
     }
 };
 int main(){
-    countbit bit;
-    int n =5;
-    cout<<"the number of set bits are "<<bit.countbits(n);
+    int nt ;
+    cin>>nt;
+    int n;
+    int k;
+    for(int i =0 ; i<nt;i++){
+        cin>>n;
+        cin>>k;
+        countbit bit;
+        int ans=0;
+        for(int a =0 ; a<=n;a++){
+            for(int b =0 ; b<=n;b++){
+                for(int c =0 ; c<=n;c++){
+                    if(a+b+c<=n){
+                        int total=bit.countbits(a)+bit.countbits(b)+bit.countbits(c);
+                    ans=max(ans,total);
+                    }
+                }
+            }
+        }
+        cout<<ans;
+    }
 }
