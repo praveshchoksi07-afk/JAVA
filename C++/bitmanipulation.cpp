@@ -8,7 +8,7 @@ public:
             binary+= (n%2==0)?'0':'1';
             n/=2;
         }
-        if (i>binary.size()){
+        if (i>=binary.size()){
             return false;
         }
         else{
@@ -18,9 +18,10 @@ public:
 };
 int main(){
     Solution sol;
-    int num=5;
-    int index=2;
-    if (sol.checkIthbit(num,index)){
+    int n;
+    int i;
+    cin>>n>>i;
+    if (sol.checkIthbit(n,i)){
         cout<<"the index is set";
     }
     else{
