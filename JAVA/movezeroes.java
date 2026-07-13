@@ -1,8 +1,6 @@
 import java.util.*;
 
 public class moveZeroes {
-
-    // Method to move all zeroes to the end
     public void movezeroes(int[] nums) {
         int j = 0;
 
@@ -15,7 +13,6 @@ public class moveZeroes {
             }
         }
     }
-
     public static void main(String[] args) {
 
         int[] nums = {0, 1, 0, 3, 12};
